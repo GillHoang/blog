@@ -21,15 +21,12 @@ const NavbarLinks = [
 ];
 
 const Navbar = () => {
-
-  const baseClasses = "text-white font-semibold text-lg opacity-70 hover:opacity-100";
+  const baseClasses = "font-semibold text-lg";
 
   return (
-    <div className="fixed top-5 left-1/2 flex items-center gap-x-10 justify-between -translate-x-1/2 bg-[#3A3A43] max-w-[40vw] w-full px-20 py-5 rounded-full">
+    <div className="fixed top-5 left-1/2 flex items-center gap-x-10 justify-between -translate-x-1/2 bg-backgroundColorLight max-w-[40vw] w-full px-20 py-5 rounded-full">
       <Link to="/">
-        <h3 className="">
-          hocsinhgioitoan
-        </h3>
+        <h3 className="">hocsinhgioitoan</h3>
       </Link>
       <div className="flex items-center gap-x-10">
         {NavbarLinks.map((link) => (
@@ -37,7 +34,7 @@ const Navbar = () => {
             to={link.path}
             key={link.name}
             className={({ isActive }) =>
-              isActive ? `${baseClasses} opacity-100` : baseClasses
+              isActive ? `${baseClasses} text-white` : `${baseClasses} text-gray-400`
             }
           >
             {link.name}

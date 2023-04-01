@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         backgroundColor: "#242424",
+        backgroundColorLight: "#3A3A43",
       },
       fontFamily: {
         primary: ["Roboto Mono", "monospace"],
