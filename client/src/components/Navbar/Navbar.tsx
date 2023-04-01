@@ -28,7 +28,7 @@ const Navbar = () => {
     <div className="fixed top-5 left-1/2 flex items-center gap-x-10 justify-between -translate-x-1/2 bg-[#3A3A43] max-w-[40vw] w-full px-20 py-5 rounded-full">
       <Link to="/">
         <h3 className="">
-          <span className="text-2xl font-bold">M</span>ERN
+          hocsinhgioitoan
         </h3>
       </Link>
       <div className="flex items-center gap-x-10">
