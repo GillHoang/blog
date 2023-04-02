@@ -21,7 +21,6 @@ const NavbarLinks = [
 ];
 
 const Navbar = () => {
-    const baseClasses = "font-semibold text-lg";
 
     return (
         <div className="relative flex flex-wrap items-center justify-between px-4 py-2 sm:px-8 sm:py-4 md:px-16 md:py-6 lg:px-20 lg:py-8 xl:px-24">
