@@ -1,24 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { NavbarLinks } from "../../constants";
 
-const NavbarLinks = [
-    {
-        name: "Home",
-        path: "/",
-    },
-    {
-        name: "About",
-        path: "/about",
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-    },
-    {
-        name: "Blog",
-        path: "/blog",
-    },
-];
 
 const Navbar = () => {
 
