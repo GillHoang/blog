@@ -6,7 +6,7 @@ import { LoadingPage } from "./components";
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
-
+const BlogPage = lazy(() => import("./pages/BlogPage"));
 const App = () => {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="blog" element={<BlogPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

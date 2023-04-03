@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+
 const AboutPage = () => {
     document.title = "Gill Coder | About";
-    // check size của web k support cho mobile
 
     return (
         <Fragment>
-            <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-backgroundColorLight rounded-3xl">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-backgroundColorLight rounded-3xl">
                 <div>
                     {/* ảnh bìa */}
-                    <div className="bg-[#ccc3bd] w-[40vw] h-[150px] rounded-t-3xl md:w-[70vw] min-[320px]:w-[90vw]"></div>
+                    <div className="bg-[#ccc3bd] w-[40vw] h-[150px] rounded-t-3xl"></div>
                     {/* avatar */}
                     <div className="relative">
                         <img
@@ -18,7 +18,7 @@ const AboutPage = () => {
                             className="w-[150px] h-[150px] rounded-full object-cover absolute -top-[75px] left-5 border-[5px] border-backgroundColorLight"
                         />
                         <div className="flex items-center justify-between">
-                            <div className="bg-backgroundColor bg-opacity-30 ml-[200px] my-5 inline-block p-1 rounded-md min-[320px]:ml-[170px] ">
+                            <div className="bg-backgroundColor bg-opacity-30 ml-[200px] my-5 inline-block p-1 rounded-md">
                                 <img
                                     src="/badge.svg"
                                     alt="badge"
@@ -26,12 +26,10 @@ const AboutPage = () => {
                                 />
                             </div>
                             <div className="mr-5">
-                                <Link to="contact" >
-                                <a
-                                    className="bg-[#2eaf5c] px-4 py-2 rounded-md text-medium hover:bg-[#1a6334] hover:ease-in-out transition-all duration-300 min-[320px]:inline-block min-[320px]:text-sm" 
-                                >
-                                    Gửi tin nhắn
-                                </a>
+                                <Link to="contact">
+                                    <a className="bg-[#2eaf5c] px-4 py-2 rounded-md text-medium hover:bg-[#1a6334] hover:ease-in-out transition-all duration-300 min-[320px]:inline-block min-[320px]:text-sm">
+                                        Gửi tin nhắn
+                                    </a>
                                 </Link>
                             </div>
                         </div>
