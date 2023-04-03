@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-5 left-1/2 inline-flex items-center gap-x-10 justify-between -translate-x-1/2 bg-[#3A3A43] max-w-[90vw] lg:max-w-[50vw] w-full px-10 py-5 ${
+      className={`fixed z-50 top-5 left-1/2 inline-flex items-center gap-x-10 justify-between -translate-x-1/2 bg-[#3A3A43] max-w-[90vw] lg:max-w-[50vw] w-full px-10 py-5 ${
         isOpen ? "flex-col rounded-[30px]" : "flex-row rounded-full"
       } `}
     >
